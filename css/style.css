@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+#header {
+  min-height: 10vh;
+  background-color: #0084ff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fill, minmax(280, 1fr)); */
+  place-items: center;
+}
+nav {
+  justify-self: end;
+}
+.logo {
+  font-size: 1.4rem;
+  justify-self: start;
+  color: white;
+}
+.nav-menu {
+  width: 30px;
+  height: 30px;
+  justify-self: end;
+}
