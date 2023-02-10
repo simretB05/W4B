@@ -18,7 +18,7 @@ nav {
   justify-self: end;
 }
 .logo {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   justify-self: start;
   color: white;
 }
@@ -26,4 +26,57 @@ nav {
   width: 30px;
   height: 30px;
   justify-self: end;
+}
+#main {
+  width: 100%;
+  min-height: 80vh;
+  background-color: lightsalmon;
+}
+.hero {
+  width: 100%;
+  height: 500px;
+  background-color: #b8ddff;
+  font-size: 1rem;
+  display: grid;
+  grid-template-rows: auto;
+  border-radius: 25px;
+  margin: 16px 0;
+}
+.hero-content {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  place-items: start;
+  border: 2px solid green;
+}
+.hero-content > h2 {
+  font-size: 1.7rem;
+  color: #0084ff;
+  font-weight: 700;
+}
+
+.hero-content p {
+  color: #4f90c8;
+  font-weight: 700;
+}
+.hero-btn {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  background-color: #0084ff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  text-align: center;
+}
+.btn-img {
+  width: 24px;
+  height: 24px;
+}
+.hero-img {
+  width: 60%;
+  align-self: end;
 }
