@@ -11,7 +11,6 @@ body {
   background-color: #0084ff;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* grid-template-columns: repeat(auto-fill, minmax(280, 1fr)); */
   place-items: center;
 }
 nav {
@@ -21,6 +20,7 @@ nav {
   font-size: 1.5rem;
   justify-self: start;
   color: white;
+  font-family: "PT Sans", sans-serif;
 }
 .nav-menu {
   width: 30px;
@@ -29,27 +29,28 @@ nav {
 }
 #main {
   display: grid;
-  grid-template-rows: 1fr;
-  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(280, 1fr));
   min-height: 80vh;
-  background-color: lightsalmon;
+  gap: 18px;
+  margin-top: 36px;
 }
-.hero {
+#hero {
   width: 100%;
+  min-height: 450px;
   background-color: #b8ddff;
   font-size: 1rem;
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr;
   border-radius: 25px;
-  margin: 16px 0;
 }
 .hero-content {
   width: 90%;
-  height: 100%;
+  min-height: 40%;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 1fr;
-  place-items: start;
+  grid-template-columns: repeat(auto-fill, minmax(280, 1fr));
+  align-items: center;
+  justify-items: start;
 }
 .hero-content > h2 {
   font-size: 1.7rem;
@@ -60,6 +61,7 @@ nav {
 .hero-content p {
   color: #4f90c8;
   font-weight: 700;
+  font-size: 1rem;
 }
 .hero-btn {
   display: grid;
@@ -71,31 +73,45 @@ nav {
   border-radius: 25px;
   padding: 10px;
   text-align: center;
+  place-items: center;
+  color: white;
+  font-weight: 700;
 }
 .btn-img {
   width: 24px;
   height: 24px;
+  justify-self: end;
+  border: 2px soild rgb(84, 211, 10);
 }
 .hero-img {
   width: 60%;
-  align-self: end;
+  height: 100%;
+  margin-left: 16px;
 }
 #our-service {
-  width: 100%;
-  height: 100%;
+  height: 850px;
   display: grid;
-  grid-template-rows: 1fr;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(280, 1fr));
+  gap: 16px;
 }
 .service-quality {
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280, 1fr));
   height: 100%;
+  place-items: center;
   background-color: #caf0db;
 }
 .service-img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
-
+.service-quality > h2 {
+  color: #54c788;
+}
+.service-quality p {
+  color: #54c788;
+}
 #planning {
   background-color: #9693e6;
 }
