@@ -99,6 +99,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280, 1fr));
   height: 100%;
+  height: 230px;
   place-items: center;
   background-color: #caf0db;
 }
@@ -111,6 +112,8 @@ nav {
 }
 .service-quality p {
   color: #54c788;
+  padding: 16px;
+  text-align: center;
 }
 #planning {
   background-color: #9693e6;
