@@ -89,11 +89,12 @@ nav {
   margin-left: 16px;
 }
 #our-service {
-  height: 850px;
+  height: 902px;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fill, minmax(280, 1fr));
   gap: 16px;
+  margin-bottom: 36px;
 }
 .service-quality {
   display: grid;
@@ -116,5 +117,56 @@ nav {
   text-align: center;
 }
 #planning {
+  height: 1356px;
   background-color: #9693e6;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  margin-top: 36px;
+}
+
+.web-planningOne {
+  height: 560px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  display: grid;
+  place-items: center;
+}
+.web-planningTwo {
+  height: 560px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  display: grid;
+  place-items: center;
+}
+
+.webPlanning-img {
+  width: 324px;
+  height: 324px;
+  justify-self: center;
+}
+
+.webPlanning-title {
+  color: white;
+  text-align: center;
+}
+.webPlaning-body {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 32px;
+}
+
+.web-planningTwo {
+  background-color: white;
+  width: 83%;
+  border-radius: 25px;
+}
+.webPlanning-titleTwo {
+  color: black;
+}
+.web-planningTwo p {
+  color: #333333;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 100;
+  padding: 16px;
 }
