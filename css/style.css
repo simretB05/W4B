@@ -89,7 +89,7 @@ nav {
   margin-left: 16px;
 }
 #our-service {
-  height: 902px;
+  /* height: 902px; */
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fill, minmax(280, 1fr));
@@ -169,4 +169,66 @@ nav {
   font-style: italic;
   font-weight: 100;
   padding: 16px;
+}
+
+#testimonials {
+  height: 902px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  background-color: white;
+}
+
+.testimonials-card {
+}
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  place-items: center;
+}
+.expert-testimonialsOne {
+  background-color: #ffd2d2;
+  width: 80%;
+  height: 450px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  place-items: center;
+}
+.expert-testimonialsTwo {
+  background-color: #ffe7c4;
+  width: 80%;
+  height: 450px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  justify-self: center;
+  place-items: center;
+}
+.expert-testimonialsThree {
+  background-color: #caf0db;
+  width: 80%;
+  height: 450px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  place-items: center;
+}
+.expert-testimonialsOne img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.expert-testimonialsTwo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.expert-testimonialsThree img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+#testimonials > p {
 }
