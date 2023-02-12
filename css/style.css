@@ -180,6 +180,28 @@ nav {
 }
 
 .testimonials-card {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  width: 80%;
+  margin-bottom: 16px;
+}
+.testimonials-card * {
+  padding: 16px;
+}
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cardSub-title {
+  font-size: 2rem;
+  color: #9693e6;
+  text-align: center;
+}
+.webPlaning-bod {
+  font-size: 1rem;
 }
 .testimonials-container {
   display: grid;
@@ -194,6 +216,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   place-items: center;
+  border-radius: 25px;
 }
 .expert-testimonialsTwo {
   background-color: #ffe7c4;
@@ -203,6 +226,7 @@ nav {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   justify-self: center;
   place-items: center;
+  border-radius: 25px;
 }
 .expert-testimonialsThree {
   background-color: #caf0db;
@@ -211,6 +235,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   place-items: center;
+  border-radius: 25px;
 }
 .expert-testimonialsOne img {
   width: 200px;
@@ -230,5 +255,11 @@ nav {
   object-fit: cover;
   border-radius: 50%;
 }
-#testimonials > p {
+#testimonials p {
+  text-align: center;
+  padding: 16px;
+}
+.left-quote,
+.right-quote {
+  width: 6px;
 }
