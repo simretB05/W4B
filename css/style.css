@@ -40,8 +40,15 @@ nav {
 #hero {
   display: grid;
   place-items: center;
-  height: 500px;
+  height: 1550px;
   margin-bottom: 16px;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 600px) {
+  #hero {
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  }
 }
 .hero-content {
   background-color: #b8ddff;
@@ -52,6 +59,12 @@ nav {
   margin-bottom: 16px;
   height: 500px;
   place-items: center;
+}
+@media only screen and (min-width: 600px) {
+  .hero-content {
+    width: 60%;
+    justify-self: start;
+  }
 }
 .hero-card {
   padding-left: 16px;
@@ -101,6 +114,11 @@ nav {
   width: 60%;
   justify-self: start;
   margin-left: 16px;
+}
+@media only screen and (min-width: 600px) {
+  .our-service {
+    width: 100%;
+  }
 }
 
 .service-quality {
