@@ -31,7 +31,8 @@ nav {
 #main {
   display: grid;
   grid-template-columns: 1fr;
-  min-height: 80vh;
+  min-height: 50vh;
+  margin-bottom: 70px;
 }
 
 /* planning-section */
@@ -172,13 +173,17 @@ nav {
 /* testimonials-section */
 
 #testimonials {
-  height: 902px;
+  height: 1700px;
   display: grid;
   place-items: center;
   grid-template-columns: 1fr;
   background-color: white;
 }
-
+@media only screen and (min-width: 600px) {
+  #testimonials {
+    height: 1041px;
+  }
+}
 .testimonials-card {
   display: grid;
   place-items: center;
@@ -341,6 +346,350 @@ nav {
 .right-quote {
   margin: 0;
   width: 12px;
+}
+
+/* benefit-section */
+#benefits-main {
+  background-color: #9693e6;
+  display: grid;
+  place-items: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#benefits {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  margin-bottom: 26px;
+}
+@media only screen and (min-width: 600px) {
+  #benefits {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    width: 100%;
+    gap: 16px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #benefits {
+    width: 100%;
+
+    grid-template-columns: repeat(auto-fit, minmax(311px, 1fr));
+    gap: 16px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #benefits {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 16px;
+  }
+}
+
+.benefits-order {
+  display: grid;
+  background-color: #f4f3fd;
+  place-items: center;
+  margin-bottom: 16px;
+  border-radius: 25px;
+}
+@media only screen and (min-width: 600px) {
+  .benefits-order {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .benefits-order {
+    justify-items: start;
+    align-items: start;
+    padding-bottom: 38px;
+  }
+}
+
+.benefits-title {
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  margin: 40px 0;
+}
+.benefitsOrder-title,
+.benefits-order span {
+  color: #9693e6;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  justify-self: start;
+}
+@media only screen and (min-width: 600px) {
+  .benefitsOrder-title,
+  .benefits-order span {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .benefitsOrder-title,
+  .benefits-order span {
+    padding: 0;
+  }
+}
+
+.benefitsOrder-title {
+  font-size: 2rem;
+  padding: 16px;
+}
+@media only screen and (min-width: 1000px) {
+  .benefitsOrder-title {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .benefitsOrder-title {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .benefitsOrder-title {
+    padding: 16px;
+  }
+}
+.benefits-body {
+  padding: 10px 16px;
+  color: #9ca5ba;
+  font-weight: 700;
+}
+@media only screen and (min-width: 600px) {
+  .benefits-body {
+    font-size: 0.7rem;
+    padding: 0 16px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .benefits-body {
+    margin: 0;
+  }
+}
+.benefits-btn {
+  width: 35%;
+  margin: 20px 16px;
+  padding: 10px;
+  justify-self: start;
+  background-color: #9693e6;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: 700;
+}
+@media only screen and (min-width: 1000px) {
+  .benefits-btn {
+    margin: 16px;
+  }
+}
+#about {
+  display: grid;
+  place-content: center;
+}
+@media only screen and (min-width: 600px) {
+  #about {
+    grid-template-columns: repeat(auto-fit, minmax(101px, 1fr));
+  }
+}
+.about-title {
+  color: #9693e6;
+  font-size: 2rem;
+  text-transform: capitalize;
+  justify-self: start;
+  margin: 48px 0 32px;
+  padding-left: 3px;
+}
+.about-body {
+  width: 90%;
+  color: #575454;
+  font-weight: 100;
+  line-height: 30.7px;
+  padding-left: 6px;
+  font-size: 1.19rem;
+  margin-bottom: 16px;
+}
+.about-bodyTwo {
+  margin-top: 16px;
+  width: 90%;
+  color: #575454;
+  font-weight: 100;
+  line-height: 30.7px;
+  padding-left: 6px;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+.owner {
+  display: grid;
+  place-items: center;
+}
+
+.owner-image {
+  width: 190px;
+  height: 190px;
+  border-radius: 500px;
+  padding-left: 10px;
+  justify-self: start;
+}
+@media only screen and (min-width: 600px) {
+  .owner-image {
+    width: 153px;
+    height: 153px;
+    border-radius: 500px;
+    padding-left: 10px;
+    justify-self: end;
+    align-self: start;
+  }
+}
+.owner-description {
+  color: #9693e6;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  justify-self: start;
+  margin-top: 16px;
+  padding-left: 7px;
+}
+.left-quoteOwner {
+  grid-column-start: -1;
+  position: relative;
+  width: 55px;
+}
+.findMe-btn {
+  background-color: #9693e6;
+  width: 257px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 7px;
+  text-transform: capitalize;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: start;
+  justify-self: start;
+  align-items: center;
+}
+.findMe-btn img {
+  height: 20px;
+  width: 20px;
+  margin-top: 5px;
+}
+/* footer */
+
+#footer {
+  min-height: 15vh;
+  background-color: #9693e6;
+  display: grid;
+  place-items: center;
+}
+#main-footer {
+  min-height: 70%;
+  display: grid;
+  place-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 80%;
+}
+@media only screen and (min-width: 600px) {
+  #main-footer {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #main-footer {
+    width: 40%;
+  }
+}
+
+.footer-title {
+  font-size: 1rem;
+  color: #d5d4f5;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.footer-subTitle {
+  color: white;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 100;
+  margin-top: 16px;
+}
+.footer-mainTitle {
+  color: #ffc166;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 600px) {
+  .footer-mainTitle {
+    font-size: 3rem;
+  }
+}
+.footer-body {
+  text-align: center;
+  color: white;
+}
+@media only screen and (min-width: 600px) {
+  .footer-body {
+    width: 64%;
+  }
+}
+.footer-btn {
+  width: 90%;
+  padding: 16px 10px;
+  border-radius: 25px;
+  text-align: center;
+  color: #9693e6;
+  text-transform: capitalize;
+  border: none;
+  margin: 32px 0;
+}
+@media only screen and (min-width: 600px) {
+  .footer-btn {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .footer-btn {
+    width: 40%;
+  }
+}
+.copyright {
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .copyright {
+    width: 100%;
+    text-align: center;
+  }
+}
+.copyright a {
+  text-align: center;
+  font-size: 0.7rem;
+  color: white;
+  width: 70%;
+}
+
+.box {
+  min-height: 5vh;
+  width: 100%;
+  background-color: #333333;
+  color: white;
+  display: grid;
+  place-items: center;
+}
+.box > p {
+  text-align: center;
+  font-size: 0.7rem;
+  width: 70%;
+}
+@media only screen and (min-width: 600px) {
+  .box > p {
+    width: 54%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .box > p {
+    width: 20%;
+  }
 }
 
 /* @media only screen and (min-width: 1000px) {
