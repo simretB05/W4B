@@ -233,6 +233,15 @@ nav {
   grid-template-columns: 1fr;
   padding: 7px;
   margin-top: 20px;
+  transition: background-color 0.5s ease;
+  box-shadow: 0 3px 0 #0084ff;
+}
+.hero-btn:hover {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+.hero-btn:active {
+  transform: translateY(3px);
+  box-shadow: none;
 }
 .hero-btn img {
   width: 20px;
