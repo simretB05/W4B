@@ -50,7 +50,7 @@
     transform: translateY(0);
   }
 }
-@keyframes trumpet-animation {
+@keyframes scale-animation {
   0% {
     transform: scale(1);
   }
@@ -147,7 +147,8 @@ nav {
 .service-img {
   width: 60px;
   height: 60px;
-  animation: trumpet-animation 2s ease-in-out infinite;
+
+  animation: scale-animation 2s ease-in-out infinite;
 }
 
 .serviceQuality-card {
@@ -232,16 +233,6 @@ nav {
   grid-template-columns: 1fr;
   padding: 7px;
   margin-top: 20px;
-
-  transition: background-color 0.5s ease;
-  box-shadow: 0 3px 0#0084ff;
-}
-.hero-btn:hover {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
-}
-.hero-btn:active {
-  transform: translateY(3px);
-  box-shadow: none;
 }
 .hero-btn img {
   width: 20px;
@@ -678,7 +669,11 @@ nav {
 .right-quote {
   margin: 0;
   width: 12px;
-  animation: bell 1s ease-in-out infinite;
+
+  animation-name: bell;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 /* benefit-section */
