@@ -949,7 +949,7 @@ nav {
   }
 }
 .footer-btn {
-  width: 90%;
+  width: 240px;
   padding: 16px 10px;
   border-radius: 25px;
   text-align: center;
@@ -957,10 +957,12 @@ nav {
   text-transform: capitalize;
   border: none;
   margin: 32px 0;
+  font-size: 1rem;
+  font-weight: 700;
 }
 @media only screen and (min-width: 600px) {
   .footer-btn {
-    width: 290;
+    width: 290px;
   }
 }
 
