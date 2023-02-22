@@ -723,6 +723,7 @@ nav {
   .service-quality {
     justify-items: center;
     align-items: start;
+    height: 444px;
 
     margin-right: 16px;
   }
@@ -748,7 +749,6 @@ nav {
   #hero > article:nth-child(4),
   #hero > article:nth-child(5) {
     border-radius: 25px;
-    height: 444px;
   }
   #hero > article:nth-child(2) {
     background-color: #caf0db;
